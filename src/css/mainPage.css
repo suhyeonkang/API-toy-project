@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*  CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 시작 */
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+
+.contentsWrapper {
+    font-family: 'Gowun Dodum', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.optionWrapper, .rankingWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.selectLocation {
+    width: 500px;
+    height: 550px;
+    border-radius: 2px;
+    padding: 32px 24px;
+    background: #fff;
+    box-shadow: 0 0 2px rgb(0 0 0 / 26%);
+    
+}
+
+.map {
+    width: 620px;
+    height: 550px;
+    border-radius: 2px;
+    padding: 32px 24px;
+    background: #fff;
+    box-shadow: 0 0 2px rgb(0 0 0 / 26%);
+    
+}
+
+.selectLocation span {
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.locationWrapper, .costWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.locationWrapper div, .costWrapper div, .plusWrapper div {
+    width: 100px;
+    height: 56px;
+    color: #7b7b7b;
+    border: 2px solid #f5f5f5;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 52px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#selectGu {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 0;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 3px solid #7ec9ec;
+    position: fixed;
+    top: 30%;
+    left: 9.3%;
+    z-index: 10;
+}
+
+#selectGu div {
+    width: 90px;
+    height: 42px ;
+    margin-right: 5px;
+    margin-top: 0;
+    font-size: 13px;
+    line-height: 30px;
+    margin-left: 1px;
+
+}
+
+.locationWrapper button, .contentsWrapper button {
+    border: none;
+    background-color: #fff;
+    width: 86px;
+    height: 38px;
+}
+
+.locationWrapper div:hover, .costWrapper div:hover, .plusWrapper div:hover {
+    color: #7ec9ec;
+    border: 2px solid #7ec9ec;
+}
+
+.timeWrapper {
+    margin-bottom: 30px;;
+}
+
+.timeSlider {
+    margin-top: 30px;
+}
+
+.timeSlider span {
+    font-size: 11px;
+}
+
+.plusWrapper {
+    padding-top: 30px;
+}
+
