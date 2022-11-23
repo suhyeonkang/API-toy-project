@@ -3,6 +3,7 @@ import "../css/intro.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import {useNavigate} from "react-router-dom";
 
 const Intro = () => {
 
@@ -22,13 +23,15 @@ const Intro = () => {
     }
 
 
+   const navigate = useNavigate();
+
     return(
         <>
         <div className= "main">
             <div className="titleWrapper">
                 <h1>공영주차장, 비교해 둠.</h1>
                 <h3>최적의 공영주차장을 찾아보세요.</h3>
-                <button>찾으러가기</button>
+                <button onClick={()=> navigate("/main")}>찾으러가기</button>
             </div>
             
             <div className= "imageWrapper">

@@ -54,8 +54,8 @@ table {
 
 .main {
     font-family: 'Gowun Dodum', sans-serif;
-    height: 500px;
-    /* height: 100%; */
+    /* height: 500px; */
+    height: 100vh;
     padding-top: 120px;
     padding-bottom: 80px;
     display: flex;
