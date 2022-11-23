@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*  CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 시작 */
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+.main {
+    font-family: 'Gowun Dodum', sans-serif;
+    /* height: 454px; */
+    height: 100%;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: hidden;
+    
+}
+
+
+.main h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #7ec9ec;
+    margin-bottom: 30px;
+}
+
+.main h3 {
+    font-size: 1.875rem;
+    font-weight: 600px;
+    color: #606d85;
+    margin-bottom: 40px;
+}
+
+.main button {
+    padding: 20px 40px 20px 40px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    background-color: #7ec9ec;
+    border-radius: 100px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: 0px 16px 42px rgb(35 126 255 / 40% );
+    cursor: pointer;
+}
+
+#imageWrapper {
+    height: 450px;   
+}
+
+#imageWrapper img {
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#imageWrapper div:nth-child(1){
+    z-index: 1;
+    position: relative;  
+    top: 90px;
+    left: -60px;
+     
+}
+
+#imageWrapper div:nth-child(2){
+    z-index: 2;
+    position: relative;
+    top: -450px;   
+}
+
+#imageWrapper div:nth-child(2) img{
+    width: 1400px;  
+ 
+}
+
+.imageWrapper2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: 10;
+}
+
+.imageWrapper2 img {
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.imageWrapper3 {
+    position: absolute;
+    top: 91%;
+    left: 48%;
+    z-index: 10;
+}
+
+.imageWrapper3 img {
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.imageWrapper4 {
+    position: absolute;
+    top: 95%;
+    left: 59%;
+    z-index: 10;
+}
+
+.imageWrapper4 img {
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.imageWrapper9 {
+    position: absolute;
+    top: 64%;
+    left: 55.5%;
+    border: none;
+    background-color: transparent;
+}
+
+.imageWrapper9 img {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    object-position: center;
+    opacity: 0.4;
+}
+
+
