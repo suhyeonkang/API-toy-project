@@ -58,6 +58,8 @@ table {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .optionWrapper, .rankingWrapper {
@@ -84,6 +86,7 @@ table {
     padding: 32px 24px;
     background: #fff;
     box-shadow: 0 0 2px rgb(0 0 0 / 26%);
+    margin-right: 10px;
     
 }
 
@@ -129,6 +132,7 @@ table {
     top: 30%;
     left: 9.3%;
     z-index: 10;
+    background-color: #fff;
 }
 
 #selectGu div {
@@ -170,3 +174,52 @@ table {
     padding-top: 30px;
 }
 
+.selectReview {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 26%);
+}
+
+.selectReview >div:nth-child(1) {
+    width: 280px;
+    height: 40px;
+    padding: 5px 16px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 26%);
+}
+
+.selectReview h3 {
+    color: #34464b;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.selectReview > div:nth-child(2) {
+    padding: 12px 16px;
+}
+
+.selectReview > div:nth-child(2) > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.selectReview > div:nth-child(3)  {
+    margin-top: 60px;
+    text-align: center;
+    position: sticky;
+    
+}
+
+.selectReview button {
+    width: 280px;
+    height: 65px;
+    border: none;
+    background-color: #7ec9ec;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
