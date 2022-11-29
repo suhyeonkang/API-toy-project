@@ -64,6 +64,7 @@ table {
     background-color: #7ec9ec;
     z-index: 100;
     
+    
 }
 
 
@@ -78,6 +79,7 @@ table {
     object-fit: cover;
     object-position: center;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .header div:nth-child(2) {

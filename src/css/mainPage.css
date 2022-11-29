@@ -151,6 +151,7 @@ table {
     background-color: #fff;
     width: 86px;
     height: 38px;
+    cursor: pointer;
 }
 
 .locationWrapper div:hover, .costWrapper div:hover, .plusWrapper div:hover {
@@ -192,6 +193,11 @@ table {
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
+    line-height: 18px;
+}
+
+.selectReview span {
+    line-height: 40px;
 }
 
 .selectReview > div:nth-child(2) {
@@ -203,10 +209,12 @@ table {
     flex-direction: row;
     justify-content: space-between;
     padding: 6px 0;
+
+    
 }
 
 .selectReview > div:nth-child(3)  {
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center;
     position: sticky;
     
