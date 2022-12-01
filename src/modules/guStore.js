@@ -23,6 +23,7 @@ const Eunpyeong = 'guStore/Eunpyeong';
 const Jongro = 'guStore/Jongro';
 const Jung = 'guStore/Jung';
 const Jungnang = 'guStore/Jungnang';
+const GuReset = 'guStore/GuReset'
 
 export const gangnam = () => ({type: Gangnam});
 export const gangdong = () => ({type: Gangdong});
@@ -49,6 +50,7 @@ export const eunpyeong = () => ({type: Eunpyeong});
 export const jongro = () => ({type: Jongro});
 export const jung = () => ({type: Jung});
 export const jungnang = () => ({type: Jungnang});
+export const gureset = () => ({type: GuReset});
 
 
 const initialStates = {
@@ -107,7 +109,9 @@ const gureducer = (state=initialStates, action) => {
         case Jung :
             return {title: '중구', guValue: 24}
         case Jungnang :
-            return {title: '중랑구', guValue: 25}                                                                                 
+            return {title: '중랑구', guValue: 25}     
+        case GuReset :
+            return {title: '지역구', guValue: 0}                                                                                
         default :
             return state;    
     }
