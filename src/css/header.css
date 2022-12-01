@@ -63,6 +63,7 @@ table {
     /* background-color: #fff; */
     background-color: #7ec9ec;
     z-index: 100;
+    position: fixed;
     
     
 }
