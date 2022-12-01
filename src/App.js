@@ -4,7 +4,7 @@ import {Route, Routes} from "react-router-dom";
 import Header from "./components/header";
 import Intro from "./components/intro";
 import MainPage from "./components/mainPage";
-import RankingModal from "./components/rankingModal";
+import ResultPage from "./components/resultPage";
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Intro></Intro>} />
       <Route path="/main" element={<MainPage></MainPage>}/>
-      <Route path="/result" element={<RankingModal></RankingModal>}/>
+      <Route path="/result" element={<ResultPage></ResultPage>}/>
+  
     </Routes>
     </>
   )
