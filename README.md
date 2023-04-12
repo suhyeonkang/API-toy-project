@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# 서울시 공영주차장 가격 검색, 비교, 추천 서비스 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+서울특별시의 공영주차장에 대한 주차 가격 검색, 비교, 추천 서비스입니다. 
 
-## Available Scripts
+## 기획 및 개발 의도 
 
-In the project directory, you can run:
+- 공영 주차장에 대한 가격 정보를 모아서 확인할 수 있는 플랫폼의 부재
+- 기본 요금 + 분 당 추가 요금으로 가격이 책정되는 구조로 운전자가 예상 주차 요금을 쉽게 파악하기 어려움
+- 월 정기권 판매 여부를 확인하려면 주차장 별로 따로 검색을 해야 하는 불편함이 있었음 
 
-### `yarn start`
+## 주요 기능 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 지역, 예상 주차 시간, 유료 / 무료 정보를 선택하면 단위 시간 별 예상 가격을 계산하여 가장 저렴한 주차장 순으로 1위 ~ 5위까지의 주차장을 추천
+  (총 주차 시간에 따른 총 주차 가격과 1분당 가격을 제공함 )
+- 월 정기권을 선택하면 정기권을 판매하고 있는 공영 주차장과 금액을 안내 (저렴한 순)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 개발 과정에서 새로 공부하여 적용한 내용 
 
-### `yarn test`
+- 서울시 제공 공공 데이터 API를 활용 
+  (Axios 라이브러리를 활용하여 GET)
+- 공공 데이터 API의 중복된 컬럼을 reduce 메서드를 사용하여 필터링 후 활용함 
+- Redux를 사용하여 전역 상태 관리를 수행함 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## 사용 언어 및 프레임워크 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+JavaScript / React / Redux / HTML / Styled-components
